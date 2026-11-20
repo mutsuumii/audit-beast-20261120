@@ -1,0 +1,92 @@
+{
+  "source_repo": "boostorg/beast",
+  "source_url": "https://github.com/boostorg/beast",
+  "audit_date": "2026-11-20T09:55:53.195275",
+  "scanner_version": "1.3.0",
+  "findings_count": 10,
+  "severity_breakdown": {
+    "HIGH": 10
+  },
+  "findings": [
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 302
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 247
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 284
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 308
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 226
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 229
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 295
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 296
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "test/extern/zlib-1.3.2/zutil.c",
+      "line": 303
+    },
+    {
+      "id": "C-RAND-001",
+      "name": "Insecure random \u2014 cryptographic use",
+      "severity": "HIGH",
+      "cwe": "CWE-338",
+      "file": "test/bench/buffers/bench_buffers.cpp",
+      "line": 140
+    }
+  ]
+}
